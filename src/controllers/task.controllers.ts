@@ -15,7 +15,6 @@ export class TaskControllers {
         };
         const response = await taskService.createTask(taskData);
         res.status(201).json(response);
-        res.status(404).json({ message: "Category not found" });
     }
 
     async getTasks(req: Request, res: Response) {
